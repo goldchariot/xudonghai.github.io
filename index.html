@@ -1,36 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的主页</title>
-  
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
-  <!-- Main Style -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  
-  <!-- Responsive Style -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  
-  <!--Fonts-->
-  <link rel="stylesheet" media="screen" href="fonts/font-awesome/font-awesome.min.css">
 
-  <!-- Extras -->
-  <link rel="stylesheet" type="text/css" href="extras/animate.css">
-  <link rel="stylesheet" type="text/css" href="extras/lightbox.css">
-  <link rel="stylesheet" type="text/css" href="extras/owl/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="extras/owl/owl.theme.css">
-  <link rel="stylesheet" type="text/css" href="extras/owl/owl.transitions.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-              <![endif]-->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <!-- <script src="jquery-2.1.1.min.js"></script> -->
+
+<!--   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+ -->  
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+  <style>
+  
+  .carousel{
+    height:450px;
+    margin-bottom: 60px;
+  }
+  .carousel .item{
+    height:450px;
+    /*background-color: #000;*/
+  }
+   .carousel img{
+    width:100%;
+  }
+  #summary-container .col-md-4{
+  text-align: center;
+  }
+
+  hr.divder{
+  margin:40px 0;
+  }
+
+  .feature{
+    padding:30px 0;
+  }
+  .feature-heading {
+    font-size: 50px;
+    color: #2a6496;
+    margin-top: 120px;
+  }
+ .feature-heading .text-muted {
+    font-size: 28px;
+  }
+
+  </style>
 </head>
-<body>
-	 
-<script>alert('welcome!');</script>
+<body data-spy="scroll" data-target=".home-menu">
+  <div class="home-menu collapse navbar-fixed-top" id="navmenu">
+    <ul class="home-menu-ul">
+        <li><a class="navScroll" href="#section-0">HOME</a></li>
+        <li><a class="navScroll" href="#section-1">教育经历</a></li>
+        <li><a class="navScroll" href="#section-2">工作经历</a></li>
+        <li><a class="navScroll" href="#section-3">个人描述</a></li>
+        <li><a class="navScroll" href="#section-4">个人技能</a></li>
+    </ul>
+  </div>
+	<div class="home">
+<!-- -展开下拉菜单的按钮- -->
+    <div data-toggle="collapse" data-target="#navmenu" id="navbtn">
+        <div class="nbp">
+          <div class="solid"></div>
+          <div class="glass"></div>
+          <div class="solid"></div>
+          <div class="glass"></div>
+          <div class="solid"></div>
+        </div>
+    </div>  
+<!-- .........- -->    
+    <div class="home-show" id="section-0">
+        <div class="home-show-intro">
+          <h1 style="margin-top:30px;">&nbsp;<span style="font-family:arial;">name</span> : 徐 东 海</h1>
+          <h1>&nbsp;<span style="font-family:arial;">sex</span> &nbsp;:&nbsp;男</h1>
+          <h1>&nbsp;<span style="font-family:arial;">both</span> :&nbsp;1993-8-25</h1>
+          <h1>&nbsp;<span style="font-family:arial;">e-mail</span> :1250466869@qq.com</h1>
+          <h2 style="color:#82BC00;">“苟利国家生死以，岂因祸福避趋之”</h2>
+          <p></p>
+        </div>
+    </div>
+    <div class="contactme">
+      <a class="navScroll" style="width:200px;display:block;margin:0 auto;" href="#section-5"><div class="email">联 系 我</div></a>
+      <div class="nexts"><a class="navScroll" href="#section-1"><span class="glyphicon glyphicon-chevron-down"></span></a></div>
+    </div>
+  </div>
+  
+  <div class="my-education" id="section-1">
+    <div class="spacing"></div>
+    <h1 class="tit-h1"><span style="font-weight:lighter">MY</span></h1>
+    <h2 class="tit-h2"> EDUCATION</h2>
+
+    <div class="carsl">
+    <!-- ..........图片轮播 .......-->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="carousel-example-generic" data-slide-to="1"></li>
+        </ol>                           <!--   对应 圆圈-->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active" style="background: url(images/carslbg1.jpg);">
+            <!-- <img src="images/carslbg1.jpg" alt="1 slide"> -->
+            <!-- 图片高度可能会影响整体图片的大小-->
+            <div class="carsltext">
+              <p style="font-weight:bold;">广西机电职业技术学院|2013年9月 至 2016年6月| 计算机应用技术 | 大专</p>
+计算机应用技术专业培养具备管理学理论基础、计算机科学技术知识及应用能力，掌握信息管理、信息系统分析与设计方法等方面的知识与能力，能在各类企、事业单位、金融机构及政府部门从事信息采集、组织、分析、传播和服务等信息管理工作或与信息管理工作相关的信息系统规划、分析、设计、实施、运行管理和评价等方面的应用型人才。
+            </div>
+          </div>
+          <div class="item" style="background: url(images/carslbg2.jpg);">
+            <!-- <img src="images/carslbg2.jpg" alt="2 slide"> -->
+            <div class="carsltext">
+            <div style="width: 750px;height: 50px;"></div>
+    <p>校内实践：图书馆管理系统（2015年5月 至 2015年6月）</p>
+    <p>实践描述：该系统包含了图书的查阅，个人账号注册和登录，图书借阅登记查询等功能。而本人参与设计前台部分</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>                                    <!-- 对应轮播主键的按钮-->
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- ..................... -->
+    </div>
+<!--     <p>广西机电职业技术学院|2013年9月 至 2016年6月| 计算机应用技术 | 大专</p>
+    <p>校内实践：图书馆管理系统（2015年5月 至 2015年6月）</p>
+    <p>实践描述：该系统包含了图书的查阅，个人账号注册和登录，图书借阅登记查询等功能。而本人参与设计前台部分</p> -->
+  </div>
+
+  <div class="my-work" id="section-2">
+    <div class="spacing"></div>
+    <h1 class="tit-h1"><span style="font-weight:lighter">MY</span></h1>
+    <h2 class="tit-h2"> WORK EXPERIENCE</h2>
+    <div class="mwcontent">
+      <div class="mwtext">
+        <p style="color:#EB6100;">2016年4月 至 2017年4月 (时长1年)</p>
+        <p>职位：<span style="color:#006699;">网页设计/制作/美工</span> | 美工部 | 全职 |基层</p>
+        <p>企业：<span style="color:#006699;">广西南宁市东方至恒网络科技有限公司</span> | 民营企业 | 1-50人 | 计算机软件行业 | 广西南宁</p>
+        <p>职务：在项目模板基础上使用photoshop进行页面的设计和修改，并使用html,css代码开发和制作前端部分以及对在其他浏览器出现的页面错误进行调试</p>
+      </div>
+    </div>
+    <div class="mwpoint"></div>
+  </div>
+
+  <div class="my-intro" id="section-3">
+    <div class="spacing"></div>
+    <h1 class="tit-h1"><span style="font-weight:lighter">MY</span></h1>
+    <h2 class="tit-h2"> BIREF INTRODUCTION</h2>
+    <div class="introcontent">
+      <div class="myphoto"></div>
+      <div class="introtext">
+    <span style="font-size:50px;">“</span>热爱互联网，倾向web前端开发。曾从事过网页美工，会使用Photoshop，Dreamweaver，Sublime Tex开发软件并熟练掌握div+css前端开发的基本技能。会使用jqurey，bootstrap框架，了解javascript，ajax，mysql数据库。对PHP有一定认识。渴望提高自己，对事有自己的想法，敢于直面自己的缺点。希望能从事网站前端方向的工作，努力的成为一名优秀的前端工程师.<span style="font-size:50px;">”</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="my-skill" id="section-4">
+    <div class="spacing"></div>
+    <h1 class="tit-h1"><span style="font-weight:lighter">MY</span></h1>
+    <h2 class="tit-h2"> VOCATIONAL SKILL</h2>
+    <ul class="my-skill-items">
+        <div class="circle">
+        <div class="pie_left"><div class="lefts"></div></div>
+          <div class="pie_right"><div class="rights"></div></div>
+          <li class="mk-items">
+            <h3>80%</h3>
+            <h4>HTML</h4>
+            <span class="vauNum" style="display:none;">80</span>
+          </li>
+        </div>
+
+        <div class="circle">
+          <div class="pie_left"><div class="lefts"></div></div>
+          <div class="pie_right"><div class="rights"></div></div>
+          <li class="mk-items">
+            <h3>70%</h3>
+            <h4>CSS</h4>
+            <span class="vauNum" style="display:none;">70</span>
+          </li>
+        </div>
+
+        <div class="circle">
+          <div class="pie_left"><div class="lefts"></div></div>
+          <div class="pie_right"><div class="rights"></div></div>
+          <li class="mk-items">
+            <h3>40%</h3>
+            <h4>JAVASCRIPT</h4>
+            <span class="vauNum" style="display:none;">40</span>
+          </li>
+        </div>
+
+        <div class="circle">
+          <div class="pie_left"><div class="lefts"></div></div>
+          <div class="pie_right"><div class="rights"></div></div>
+          <li class="mk-items">
+            <h3>50%</h3>
+            <h4>PHOTOSHOP</h4>
+            <span class="vauNum" style="display:none;">50</span>
+          </li>
+        </div>
+    </ul>
+  </div>
+        
+  <div class="contameModule">
+    <div class="contactway">
+      <div class="contactnum">
+        <ul>
+          <p>联系方式</p>
+          <li><img src="images/email.png" alt=""> &nbsp;1250466869@qq.com</li>
+          <li><img src="images/wechat.png" alt=""> &nbsp;xdh1250</li>
+          <li><img src="images/qq.png" alt=""> &nbsp;1250466869</li>
+          <li><img src="images/weibo.png" alt=""> &nbsp;griffthmofite</li>
+        </ul>
+      </div>
+      <div class="contacticon" id="section-5">
+        <p>FOLLOW  ME</p>
+        <ul style="margin-left:90px;">
+          <li><a href="http://www.mail.163.com/"><img src="images/wangyi.png" alt=""></a></li>
+          <li><a href="http://www.mail.qq.com/"><img src="images/qq.png" alt=""></a></li>
+          <li><a href="http://wx.qq.com/"><img src="images/wechat.png" alt=""></a></li>
+          <li><a href="http://www.weibo.com/"><img src="images/weibo2.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+<!--     <div class="backTop">
+      <a class="navScroll" href="#section-1">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+    </div> -->
+  </div>
+        
+
+
+
+
+
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  --> 
+    <script>
+    $(document).ready(function(){
+      $("#demo-navbar .dropdown-menu a").click(function(){
+        var href=$(this).attr("href");
+        $("#tab-list a[href='"+href+"']").tab("show");      
+
+        });
+    });
+// 圆形百分比图
+    $(function() {
+      $('.circle').each(function(index, el) {
+        var num = $(this).find('.vauNum').text() * 3.6;
+        if (num<=180) {
+                    $(this).find('.rights').css('transform', "rotate(" +num + "deg)");
+        } else{
+             var that=$(this).find('.rights');
+             that.css('transform', "rotate(180deg)");
+            $(this).find('.lefts').css('transform', "rotate(" + (num-180) + "deg)")
+        };
+      });
+    });
+
+  //点击页面收回菜单栏折叠
+    var _flag=0;
+    $('#navmenu').mouseenter(function(){_flag=1;});
+    $('#navmenu').mouseleave(function(){_flag=0;});
+
+    $(document).click(function(){
+      if(_flag==1){
+        $('#navmenu').collapse('show');
+      }else if(_flag==0){
+        $('#navmenu').collapse('hide');
+      }
+    });
+// ------------导航锚点滚动效果--------------
+$(document).ready(function() {
+  $("a.navScroll").click(function() {
+    $("html, body").animate({
+      scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+      duration: 500,
+      easing: "swing"
+    });
+    return false;
+  });
+});
+
+    </script>
 </body>
 </html>
